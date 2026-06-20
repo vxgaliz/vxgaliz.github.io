@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'justCosmic';
+    src: url('/fonts/justCosmic/Just\ Cosmic.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Optimizes font loading behavior */
+}
+@font-face {
+    font-family: 'aileron';
+    src: url('/fonts/aileron/Aileron.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Optimizes font loading behavior */
+}
+:root {
+    --primary-color: #7a7066;
+    --nav-color: #514c47;
+    --bodytxt: #3c3333;
+    --txt: #fcf6c2;
+    --hover: #cedcf8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'aileron';
+    background-color: #7a7066;
+    background-image: url('/images/bg/bg01.png');
+    background-repeat: repeat;
+}
+
+header {
+    margin: 8.5em;
+}
+header h1 {
+    user-select: none;
+}
+
+hr {
+    height: 2px;
+    border-radius: 15px;
+    background-color: var(--txt);
+}
+
+/*----------------Navbar Properties----------------*/
+.navbar {
+    font-family: 'aileron';
+    position: sticky;
+    color: var(--txt);
+    background-image: url(/images/bg/bg02.png);
+    opacity: 80%;
+    font-size: 1.5rem;
+    margin: auto;
+}
+.navbar h1 {
+    font-family: 'justCosmic';
+    font-size: 4rem;
+    margin-left: 5rem;
+}
+
+.nav-item {
+    justify-content: space-evenly;
+    margin: 0 30px 0 30px;
+}
+
+.navbar i {
+    font-size: 1.3rem;
+    transition: 0.5s ease;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--txt);
+    transition: 0.5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i.active {
+    color: var(--hover);
+    text-shadow: 1px 1px 2px brown, 0 0 25px rgb(66, 66, 177), 0 0 5px darkblue;
+}
+
+/*----------------Main Properties----------------*/
+.projectsContainer {
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 5em;
+}
+.projectsContainer h4 {
+    font-family: 'justCosmic';
+    color: var(--txt);
+    text-align: justify;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+.projectsContainer h5 {
+    font-family: 'aileron';
+    color: var(--hover);
+    text-align: justify;
+    text-decoration: none;
+    line-height: 1.7;
+}
+.projectsContainer p {
+    font-family: 'aileron';
+    font-size: 1.25em;
+    padding: 10px;
+    background-color: var(--txt);
+    border-radius: 20px;
+}
+.projectsContainer img {
+    border-radius: 0.5em;
+    transition: transform 0.2s;
+    width: 70%;
+    margin-left: 10em;
+    scale: 110%;
+}
+.projectsContainer img:hover {
+    border-radius: 0.5em;
+    transform: scale(1.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    padding: 5rem;
+}
+
+.carousel-item img {
+    margin: auto;
+}
+.carousel-control-prev {
+    margin-left: 3em;
+}
+.carousel-control-next {
+    margin-right: 3em;
+}
+
+#weRise .col {
+    margin: auto;
+}
+#klizshop .col {
+    margin: auto;
+}
+#usee .col {
+    margin: auto;
+}
+#cyborgPigeon .col {
+    margin: auto;
+}
+
+.cyborgPigeonLink {
+    text-decoration: none;
+    color: inherit;
+}
+.cyborgPigeonLink:hover {
+    text-decoration: none;
+    color: var(--txt);
+    transition: 0.5s ease-in-out;
+    text-shadow: 1px 1px 10px black;
+}
+#cyborgPigeon {
+    background: rgb(60, 51, 51, .8);
+    border-radius: 25px;
+}
+#usee {
+    background: rgb(60, 51, 51, .6);
+    border-radius: 25px;
+}
+#klizshop {
+    background: rgb(60, 51, 51, .8);
+    border-radius: 25px;
+}
+#weRise {
+    background: rgb(60, 51, 51, .6);
+    border-radius: 25px;
+}
+
+/*----------------Footer Properties----------------*/
+#footer {
+    background-image: url(/images/bg/bg02.png);
+    color: var(--txt);
+    opacity: 80%;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#footer p {
+    margin-top: 10px;
+    color: var(--txt);
+}
+
+#footer .copyright img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+#footer .copyright a {
+    width: 50px;
+    height: auto;
+    display: inline-table;
+    margin-right: 10px;
+}
+
+#links img:hover {
+  filter: invert(80%);
+  transition: 0.5s ease;
+}
