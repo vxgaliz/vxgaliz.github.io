@@ -84,6 +84,19 @@ hr {
 }
 
 /*----------------Main Properties----------------*/
+.packageNote {
+    color: var(--txt);
+    text-align: center;
+    margin: 15em;
+}
+.packageNote h1 {
+    font-family: 'justCosmic';
+    font-size: 10rem;
+}
+.packageNote h2 {
+    font-size: 3rem;
+}
+
 .packageContainer {
     margin: 15px;
     display: flex;
